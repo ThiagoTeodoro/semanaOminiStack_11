@@ -50,7 +50,7 @@ Atividades da Semana Oministack 11.
 
 > Não existe uma checagem da geração automática do Id Randômico das Ongs, o que quer dizer que apesar da chance ser baixa, pode acontecer de uma mesma Ong ter um id cadastrado de uma ong que já existe, e ai na seleção de profile ele vai retornar sempre a ultima ong que esse id, por isso implementei essa lógica aqui, para impedir esse cenário.
 
-`
+```
 OngControler.js 
 
 const connection = require('../database/connection');
@@ -77,7 +77,6 @@ async function getOngById(id) {
         .where({ 'id': id })
         .first();
 };
-
 
 module.exports = {
 
@@ -132,7 +131,7 @@ module.exports = {
     },
 }
 
-`
+```
 
 ### Aula 03
 
