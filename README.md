@@ -137,4 +137,14 @@ module.exports = {
 
 #### Conceitos aprendidos
 
+> Componente : Um Componente é uma função que retorna HTML. 
+
+> JSX: É o nome dado para a mistura de JavaScript com HTML.
+
+> Propriedades no React : São "atributos" passados para componentes dentro do React. 
+
+> Estado no React: Informação que será mantida pelo componente, gerenciada pelo componente e essas informações são refletidas na interface.
+
+> Imutabilidade: Por uma questão de performace, o valor de estados não podem ser alterados de forma direta, eles precisam ser sobrepostos.
+
 
