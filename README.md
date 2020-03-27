@@ -150,3 +150,9 @@ module.exports = {
 ### Aula 04
 
 #### Conceitos aprendidos
+
+> Expo : Framework para unificar o desenvolvimento mobile, eliminando a preocupação de compilação para várias plataformas (Android, IOS).
+
+> Elementos React Native, Diferenças : Não possuem diferenças significativas quanto ao aspecto semântico. A estilização é feita por meio de objetos StyleSheet que é renderizada pela classe StyleSheet do React-Native. Propriedades de estilo são em CamelCase. Não possuie Herança de Estilo, todo componente deve ser estilizado de maneira individual.
+
+> Deep Link: Maneira nativa de chamar uma aplicação dentro de um SO Mobile.
