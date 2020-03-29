@@ -1,14 +1,5 @@
 const connection = require('../database/connection');
-const crypto = require('crypto');
-
-/**
- * Função para gerar um id Randomico.
- * 
- */
-function generateRandomicId() {
-    return crypto.randomBytes(4).toString('HEX');
-};
-
+const generateRandomicId = require('../utils/generateRandomicId');
 
 /**
  * Função responsável por obter uma ONG pelo Id.

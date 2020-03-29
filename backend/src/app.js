@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
+const { errors } = require('celebrate');
 const cors = require('cors');
 
 //Configurações do Express.
@@ -20,6 +21,11 @@ app.use(express.json());
  */
 app.use(routes); 
 
+/**
+ * Personalização de erros de validação por meio do 
+ * Celebrate. É automático basta fazer isso e ele
+ * já trata os erros por meio de um default.
+ */
+app.use(errors());
 
-//Porta de Trabalho
-app.listen(3333);
+module.exports = app;

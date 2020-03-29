@@ -46,6 +46,8 @@ Atividades da Semana Oministack 11.
 
 > Funcionalidades : Login de ONG, Logout ONG, Cadastro de ONG, Cadastrar novo Caso, Deletar Casos. Listar Casos especificos de uma ONG, Listar todos dos Casos, Entrar em contato com a ONG.
 
+> NOTAS : Comando para executar as migrations, npx knex migrate:latest.
+
 ###### Realizei uma correção de Logica na minha opnião necessária.
 
 > Não existe uma checagem da geração automática do Id Randômico das Ongs, o que quer dizer que apesar da chance ser baixa, pode acontecer de uma mesma Ong ter um id cadastrado de uma ong que já existe, e ai na seleção de profile ele vai retornar sempre a ultima ong que esse id, por isso implementei essa lógica aqui, para impedir esse cenário.
@@ -156,3 +158,21 @@ module.exports = {
 > Elementos React Native, Diferenças : Não possuem diferenças significativas quanto ao aspecto semântico. A estilização é feita por meio de objetos StyleSheet que é renderizada pela classe StyleSheet do React-Native. Propriedades de estilo são em CamelCase. Não possuie Herança de Estilo, todo componente deve ser estilizado de maneira individual.
 
 > Deep Link: Maneira nativa de chamar uma aplicação dentro de um SO Mobile.
+
+### Aula 05
+
+#### Conceitos aprendidos
+
+> Validações com Celebrate: Celebrate é uma biblioteca JavaScript para validação, que é uma facitora da implementação do Joi. No códgio, você adiciona nas rotas logo após o endereço da rota as validações, e o Express por funcionar no estilo Medware irá executar a sequencia Rota, Validação, Ação... por isso é importante fazer a validação antes da ação. As validações do Joi apresentam um padrão, que se resume a Joi.TIPO.OBRIGATORIEDADE.DETALHES_CAMPO. O Celebrate já tem uma biblioteca padrão de personalização de erro, e é muito simples, basta no index.js fazer o use de erros, da biblioteca do Celebrate. O Celebrate permite você validar todos os campos por tipo em uma mesma requisição, juntos, Header, Body, Query etc...
+
+> Teste automátizados com Jest : Framework para desenvolvimento de testes no Node, React e até ReactNative. Para usar necessário começar fazendo um npx jest --init. Os 2 mais importantes testes seriam os unitários (unit) e os de integração (integration).
+
+> Teste de Integração : Esse tipo de Teste toca varias parte da aplicação, testando por completo uma funcionalidade.
+
+> Teste Unitário : Esse tipo de Teste encosta em um setor muito isolado da aplicação tem por objetivo testar uma unidade bem finita de código. Alto muito expecifico.
+
+> Biblioteca cross-env : Usada para diferenciar os ambientes por meio do package.json.
+
+> Biblioteca supertest : Biblioteca com ferramentas para teste, entre elas um "CHAMADOR" de API, ou seja requisições HTTP.
+
+> NOTAS: Seria interessante usar o jest e supertest como dependências de desenvolvimento. Usando o -D na hora da instalação.

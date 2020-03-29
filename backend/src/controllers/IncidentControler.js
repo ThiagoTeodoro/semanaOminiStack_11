@@ -10,6 +10,10 @@ module.exports = {
      */
     async index(request, response){
 
+        /**
+         * Esse tipo notação indica que se não vier nada em 
+         * Page ele tera o valor default de 1
+         */
         const { page = 1 } = request.query;
 
         const [count] = await connection('incidents').count();
